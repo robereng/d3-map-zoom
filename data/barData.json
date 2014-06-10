@@ -1,0 +1,161 @@
+var barData = [{
+    "region": "Global",
+    "conv": 6.68,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 45
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 37
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 22
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 16
+    }]
+}, {
+    "region": "Europe",
+    "conv": 6.12,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 58
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 34
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 24
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 12
+    }]
+}, {
+    "region": "North America",
+    "conv": 5.58,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 76,
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 53
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 35
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 18
+    }]
+}, {
+    "region": "South America",
+    "conv": 4.99,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 76
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 60
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 44
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 22
+    }]
+}, {
+    "region": "UK",
+    "conv": 6.43,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 51
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 40
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 30
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 21
+    }]
+}, {
+    "region": "China",
+    "conv": 5.44,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 40
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 23
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 18
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 9
+    }]
+}, {
+    "region": "Middle East",
+    "conv": 8.23,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 78
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 66
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 56
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 49
+    }]
+}, {
+    "region": "Asia Pacific",
+    "conv": 8.10,
+    "data": [{
+        "name": "Guests / test drives",
+        "avg": 45,
+        "value": 76
+    }, {
+        "name": "Guests / sales",
+        "avg": 37,
+        "value": 56
+    }, {
+        "name": "Event / test drives",
+        "avg": 22,
+        "value": 20
+    }, {
+        "name": "Event / sales",
+        "avg": 16,
+        "value": 15
+    }]
+}]

@@ -1,0 +1,214 @@
+/**
+ * @author rob reng
+ * main style for d3 map demo
+ */
+ @font-face {
+    font-family:'oswaldregular';
+    src: url('oswald-regular.eot');
+    src: url('oswald-regular.eot?#iefix') format('embedded-opentype'), url('oswald-regular.woff') format('woff'), url('oswald-regular.ttf') format('truetype'), url('oswald-regular.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'oswaldlight';
+    src: url('oswald-light-webfont.eot');
+    src: url('oswald-light-webfont.eot?#iefix') format('embedded-opentype'), url('oswald-light-webfont.woff') format('woff'), url('oswald-light-webfont.ttf') format('truetype'), url('oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#header {
+    margin: 0 15px;
+    position: relative;
+    margin: 23px auto 0;
+    width: 960px;
+    z-index: 200;
+    min-height: 58px;
+}
+#container {
+    margin: 0 15px;
+    position: relative;
+    margin: 43px auto 0;
+    width: 960px;
+    z-index: 200;
+}
+.h-logo {
+    display: none;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(img/h-logo.jpg) no-repeat;
+    width: 116px;
+    height: 58px;
+    left: 422px;
+    top: 0;
+    position: absolute;
+    .background {
+        fill: none;
+        pointer-events: all;
+    }
+}
+#h-nav {
+    width: 100%;
+    padding: 47px 0 0;
+    text-transform: uppercase;
+}
+#h-nav .left-menu {
+    float: left;
+}
+#h-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 0;
+    width: 410px;
+    background: url(img/h-nav-top-border.gif) repeat-x;
+}
+#h-nav .right-menu {
+    float: right;
+}
+#h-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 0;
+    width: 410px;
+    background: url(img/h-nav-top-border.gif) repeat-x;
+}
+.background {
+    fill: none;
+    pointer-events: all;
+}
+.continent {
+    stroke: #fff;
+    fill: #ccc;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.continent.active {
+    fill: #365F27;
+}
+.continent.clicked {
+    fill: orange;
+}
+.hidden {
+    display: none;
+}
+div.tooltip {
+    color: #222;
+    background: #fff;
+    padding: .5em;
+    text-shadow: #f5f5f5 0 1px 0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px #a6a6a6;
+    opacity: 0.9;
+    position: absolute;
+    font: normal 10px"Helvetica Neue", Helvetica, sans-serif;
+}
+.chart {
+    float: right;
+    margin-top: 11px;
+}
+.chart h2 {
+    margin: -10px 0 -25px 0;
+    font-family: oswaldlight;
+    font-size: 41px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 45px;
+    border: none;
+    text-transform: uppercase;
+    width: 300px;
+    padding: 10px 0;
+    border-top: 1px #ccc solid;
+    text-align: center;
+}
+.chart h3 {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    color: #999;
+    margin: 10px 0;
+    line-height: 40px;
+    text-rendering: optimizelegibility;
+}
+.chart h3 em {
+    color: #365F27 !important;
+    margin-right: 5px;
+}
+.chart .header {
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+}
+.chart .indicators {
+    border-top: 1px #ccc solid;
+    width: 300px;
+}
+.chart .indicators h3 {
+    color: #000;
+}
+.factor {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.factor h5 {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    top: 4px;
+    width: 40%;
+    padding-right: 10px;
+    font-weight: normal;
+    font-family: Georgia;
+}
+.factor .graph {
+    float: left;
+    width: 55%;
+}
+.factor .graph .bar-outer {
+    position: relative;
+    float: left;
+    margin-top: 5px;
+    width: 130px;
+    height: 20px;
+    background: #ccc;
+    margin-right: 5px;
+}
+.factor .graph .bar-outer .average-marker {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    -webkit-border-radius: 100% 5px 5px 5px;
+    -moz-border-radius: 100% 5px 5px 5px;
+    border-radius: 100% 5px 5px 5px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-left: -5px;
+    top: 5px;
+}
+.factor .graph .bar-outer .bar {
+    width: 0;
+    height: 20px;
+    background: #365F27;
+    -moz-transition: all 350ms ease-in-out;
+    -webkit-transition: all 350ms ease-in-out;
+    -ms-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+}
+.gti_skin_background {
+    background-color: #365F27 !important;
+}
+.factor .graph em {
+    position: relative;
+    float: left;
+    top: 4px;
+    font-style: normal;
+    font: 12px/24px'oswaldregular';
+}
