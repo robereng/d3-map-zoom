@@ -1,7 +1,7 @@
 d3 map zoom
 =====
 
-This is ba little d3 experiment with map zooming for custom regions, with corresponding data sets being shown for each region.
+This is a little d3 experiment with map zooming for custom regions, with corresponding data sets being shown for each region.
 
 Documentation
 =====
